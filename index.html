@@ -93,15 +93,15 @@
     <h2 id="form-section">Анкета пользователя</h2>
     <form action="/" method="POST">
         <!-- 1. ФИО (строго буквы) -->
-        <label>
+     <label>
             ФИО:<br />
             <input 
                 type="text" 
                 name="fio" 
                 placeholder="Иванов Иван Иванович" 
                 required 
-                pattern="[A-Za-zА-Яа-яЁё\s-]+" 
-                title="ФИО должно содержать только буквы!" 
+                pattern="^[A-Za-zА-Яа-яЁё]+\s+[A-Za-zА-Яа-яЁё]+\s+[A-Za-zА-Яа-яЁё]+$" 
+                title="Введите ровно 3 слова (Фамилия Имя Отчество) только из букв!" 
             />
         </label><br /><br />
 
